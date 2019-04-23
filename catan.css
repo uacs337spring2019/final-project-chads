@@ -1,0 +1,114 @@
+/*
+catan.css
+Chad Stogner
+CSc 337, Spring 2019
+Assignment #11
+
+Style sheet for catan.html
+
+
+*/
+
+body {
+	background-color: #222222;
+	color: white;
+	text-align: center;
+}
+
+canvas {
+	background-color: #222222;
+}
+
+#game, #bottom {
+	margin: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#gameboard {
+	width: 45%;
+}
+
+#content {
+	width: 45%;
+	height: 400px;
+}
+
+#content > div {
+	padding: 10px;
+}
+
+.player {
+	display: none;
+}
+
+button {
+	font-size: 25px;
+}
+
+#bottom canvas {
+	border: black solid 2px;
+}
+
+#cards {
+	display: flex;
+	justify-content: space-between;
+}
+
+#cards > div {
+	width: 75px;
+	height: 125px;
+	border: black solid 2px;
+	color: black;
+	font-family: fantasy;
+}
+
+#cards button {
+	font-size: 10px;
+	width: 25px;
+	height: 25px;
+	border: black solid 2px;
+	margin: 2px;
+}
+
+#brick {
+	background-color: #CC5500;
+}
+
+#lumber {
+	background-color: darkgreen;
+}
+
+#grain {
+	background-color: yellow;
+}
+
+#wool {
+	background-color: lightgreen;
+}
+
+#ore {
+	background-color: gray;
+}
+
+.p1 {
+	background-color: red;
+}
+
+.p2 {
+	background-color: blue;
+}
+
+.p3 {
+	background-color: orange;
+}
+
+.p4 {
+	background-color: white;
+}
+
+
+
+
+
+
