@@ -5,7 +5,12 @@ Chad Stogner
 CSc 337, Srping 2019
 Assignment #11
 
-
+Recreation of the board game Settlers of Catan.
+Version 1.0.0
+Lays out game board using canvas and allows users to place pieces on the canvas.  Has ability
+to roll the dice and add material cards as necessary (to any player).  End turn button switches
+between diferent players.  Players can also get development cards, can hold down on the
+card to reveal the description.
 -->
 <html>
 	<head>
@@ -15,6 +20,9 @@ Assignment #11
 	</head>
 
 	<body>
+		<img id="cs1" src="cslogo.jpg" alt="CS"/>
+		<div id="blank"></div>
+
 		<h1>Settlers of Catan</h1>
 
 		<div id="game">
@@ -26,6 +34,7 @@ Assignment #11
 					<button id="settlement">Settlement</button>
 					<button id="city">City</button>
 				</div>
+				<button id="development">Development Card</button>
 			</div>
 
 			<div id="content">
@@ -34,24 +43,32 @@ Assignment #11
 						<h2>Player 1</h2>
 
 						<div class="cards"></div>
+						<div class="development"></div>
+						<div class="development"></div>
 					</div>
 
 					<div id="player2" class="player">
 						<h2>Player 2</h2>
 
 						<div class="cards"></div>
+						<div class="development"></div>
+						<div class="development"></div>
 					</div>
 
 					<div id="player3" class="player">
 						<h2>Player 3</h2>
 
 						<div class="cards"></div>
+						<div class="development"></div>
+						<div class="development"></div>
 					</div>
 
 					<div id="player4" class="player">
 						<h2>Player 4</h2>
 
 						<div class="cards"></div>
+						<div class="development"></div>
+						<div class="development"></div>
 					</div>
 				</div>
 
@@ -65,7 +82,7 @@ Assignment #11
 				</div>
 
 				<div id="cards">
-					<div id="brick">
+					<div class="Brick">
 						<p>Brick</p>
 						<button id="brick1" class="p1">+</button>
 						<button id="brick2" class="p2">+</button>
@@ -73,7 +90,7 @@ Assignment #11
 						<button id="brick4" class="p4">+</button>
 					</div>
 
-					<div id="lumber">
+					<div class="Lumber">
 						<p>Lumber</p>
 						<button id="lumber1" class="p1">+</button>
 						<button id="lumber2" class="p2">+</button>
@@ -81,7 +98,7 @@ Assignment #11
 						<button id="lumber4" class="p4">+</button>
 					</div>
 
-					<div id="grain">
+					<div class="Grain">
 						<p>Grain</p>
 						<button id="grain1" class="p1">+</button>
 						<button id="grain2" class="p2">+</button>
@@ -89,7 +106,7 @@ Assignment #11
 						<button id="grain4" class="p4">+</button>
 					</div>
 
-					<div id="wool">
+					<div class="Wool">
 						<p>Wool</p>
 						<button id="wool1" class="p1">+</button>
 						<button id="wool2" class="p2">+</button>
@@ -97,7 +114,7 @@ Assignment #11
 						<button id="wool4" class="p4">+</button>
 					</div>
 
-					<div id="ore">
+					<div class="Ore">
 						<p>Ore</p>
 						<button id="ore1" class="p1">+</button>
 						<button id="ore2" class="p2">+</button>
