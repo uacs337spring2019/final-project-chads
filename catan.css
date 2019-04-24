@@ -6,8 +6,25 @@ Assignment #11
 
 Style sheet for catan.html
 
-
+Uses flex to separate the game board on the left from the player content on the right.  Uses flex
+to show cards in a row. Gives materials a color to unify the board.  Gives players a color to 
+unify the board.
 */
+
+img, #blank {
+	width: 50px;
+	height: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#cs1 {
+	float: left;
+}
+
+#blank {
+	float: right;
+}
 
 body {
 	background-color: #222222;
@@ -17,6 +34,26 @@ body {
 
 canvas {
 	background-color: #222222;
+}
+
+h1 {
+	font-size: 35px;
+	padding: 10px;
+	border-bottom: #DDDDDD solid 3px;
+	margin: 10px;
+}
+
+h2 {
+	margin-top: 10px;
+	font-size: 25px;
+}
+
+h3 {
+	margin: 0px;
+	padding-top: 5px;
+	padding-right: 2px;
+	padding-left: 2px;
+	font-size: 13px;
 }
 
 #game, #bottom {
@@ -35,7 +72,8 @@ canvas {
 }
 
 #content > div {
-	padding: 10px;
+	margin-top: 25px;
+	margin-bottom: 30px;
 }
 
 .player {
@@ -44,6 +82,49 @@ canvas {
 
 button {
 	font-size: 25px;
+	font-family: serif;
+	margin-right: 5px;
+	margin-left: 5px;
+	background-color: #DDDDDD;
+}
+
+#development {
+	margin-top: 35px;
+}
+
+.development {
+	height: 65px;
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+	padding: 2px;
+}
+
+.norm, .show {
+	background-color: #DDDDDD;
+	margin: 10px;
+	border: black solid 2px;
+	color: black;
+	font-family: fantasy;
+}
+
+.norm {
+	width: 75px;
+	height: 50px;
+}
+
+.norm p {
+	display: none;
+}
+
+.show {
+	display: block;
+	width: 450px;
+	height: 100px;
+}
+
+.show p {
+	display: block;
 }
 
 #bottom canvas {
@@ -52,10 +133,11 @@ button {
 
 #cards {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	margin-top: 0px;
 }
 
-#cards > div {
+#cards > div, .cards div {
 	width: 75px;
 	height: 125px;
 	border: black solid 2px;
@@ -71,24 +153,36 @@ button {
 	margin: 2px;
 }
 
-#brick {
+.number {
+	font-size: 23px;
+}
+
+.cards {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: white solid 2px;
+	padding-bottom: 10px;
+	margin: 5px;
+}
+
+.Brick {
 	background-color: #CC5500;
 }
 
-#lumber {
-	background-color: darkgreen;
+.Lumber {
+	background-color: #246A19;
 }
 
-#grain {
-	background-color: yellow;
+.Grain {
+	background-color: #F0D031;
 }
 
-#wool {
-	background-color: lightgreen;
+.Wool {
+	background-color: #8ED47C;
 }
 
-#ore {
-	background-color: gray;
+.Ore {
+	background-color: #7B7080;
 }
 
 .p1 {
@@ -106,9 +200,3 @@ button {
 .p4 {
 	background-color: white;
 }
-
-
-
-
-
-
