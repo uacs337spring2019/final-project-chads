@@ -111,7 +111,7 @@ Uses the web service to grab a random development card.
 	**/
 	function development() {
 		// parameter passed in case future versions make use of the web service
-		let url = "http://settlersofkatan.herokuapp.com?mode=development";
+		let url = "http://localhost:3000?mode=development";
 
 		fetch(url)
 		.then(checkStatus)

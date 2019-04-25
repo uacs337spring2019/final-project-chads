@@ -1,0 +1,3 @@
+Monopoly
+2
+When you play this card, announce 1 type of resource.  All other players must give you all of their rewrouces of that type.
