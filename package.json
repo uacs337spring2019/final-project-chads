@@ -1,8 +1,8 @@
 {
-  "name": "catan",
+  "name": "catan.js",
   "version": "1.0.0",
   "description": "",
-  "main": "catan_service.js",
+  "main": "catan.js",
   "dependencies": {
     "client-sessions": "^0.8.0",
     "cookie-parser": "^1.4.4",
