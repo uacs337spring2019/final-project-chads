@@ -32,7 +32,7 @@ app.get('/', function (req, res) {
 	}
 })
 
-app.listen(process.env.PORT);
+app.listen(3000);
 
 /**
 Picks a random card from the 'deck'.  Builds a JSON object of the cards name and description.
