@@ -1,0 +1,3 @@
+Knight
+14
+Move the robber.  Steal 1 resource from the owner of a settlement or city adjacent to the robber's new hex.
