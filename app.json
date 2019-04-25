@@ -1,6 +1,7 @@
 {
-	"name": "Node.js Sample",
+	"name": "Node.js",
 	"description": "A barebones Node.js app using Express 4",
 	"repository": "https://github.com/uacs337spring2019/final-project-chads",
-	"logo": "https://rawgit.com/heroku/node-js-sample/master/public/node.svg", "keywords": ["node", "express", "static"]
+	"logo": "https://rawgit.com/heroku/node-js-sample/master/public/node.svg", 
+	"keywords": ["node", "express", "static"]
 }
