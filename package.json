@@ -13,7 +13,7 @@
   "devDependencies": {}, 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-    "start": "catan_service.js"
+    "start": "node catan_service.js"
   },
 
   "repository": {
